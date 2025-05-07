@@ -4,7 +4,6 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
     --card: 0 0% 100%;
     --card-foreground: 240 10% 3.9%;
@@ -62,6 +61,18 @@
   @apply absolute inset-0 opacity-0 bg-muted/50 group-hover:opacity-100 transition-opacity rounded-md;
 }
 
+.gradient-menu {
+  @apply bg-gradient-to-r from-primary/20 to-primary/10;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
 .label-green {
   @apply border-green-500 text-green-500;
 }
